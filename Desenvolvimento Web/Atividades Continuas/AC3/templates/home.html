@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Página Inicial</title>
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='css/style.css') }}"
+        />
+    </head>
+    <body>
+        <header></header>
+
+        <nav class="bar" role="barra de navegação"></nav>
+
+        <main class="content">
+            <aside class="sidebar" role="links">
+                <h2>Navegação</h2>
+                <ul class="ul">
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('contato') }}">Contato</a></li>
+                </ul>
+            </aside>
+
+            <section class="main-content" role="conteúdo do assunto">
+                <h1>Bem-vindo(a) à minha página!</h1>
+                <p>Esta é a página inicial. Se precisar entrar em contato, clique <a href="{{ url_for('contato') }}">aqui</a>.</p>
+            </section>
+        </main>
+    </body>
+</html>

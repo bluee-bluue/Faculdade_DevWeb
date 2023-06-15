@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Inscrição concluida</title>
+</head>
+
+<body>
+
+</body>
+<header>
+    <h1 class="msg_boas_vindas">Obrigado por se inscrever!</h1>
+    <h3 class="mensagem">Inscrição concluida</h3>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/newsletter">Newsletter</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <h2 class="h">Inscrição feita com sucesso</h2>
+    <div>
+        <p>Nome: {{ nome }}</p>
+        <p>Email: {{ email }}</p>
+        <p>Número: {{ tel }}</p>
+    </div>
+    <form id="formulario" action="/home">
+        <input type="submit" value="Voltar para a página principal">
+    </form>
+</div>
+
+</html>
